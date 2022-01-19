@@ -4,15 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gris_200"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+
+        android:layout_height="310dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/Libro1" />
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="177dp"
+        android:text="Bienvenidos"
+        android:textColor="@color/blue_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_correo_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_correo_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pasword_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/til_correo_login"
+        app:layout_constraintStart_toStartOf="@+id/til_correo_login"
+        app:layout_constraintTop_toBottomOf="@+id/til_correo_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_pasword_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue_700"
+        android:text="Iniciar sesion"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/til_pasword_login"
+        app:layout_constraintStart_toStartOf="@+id/til_pasword_login"
+        app:layout_constraintTop_toBottomOf="@+id/til_pasword_login" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
