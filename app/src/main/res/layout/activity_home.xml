@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/Libro1" />
+        app:srcCompat="@drawable/book2" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -90,6 +90,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_libros"
         android:layout_width="0dp"
         android:layout_height="253dp"
         android:layout_marginStart="16dp"
@@ -100,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_agregar_libro"
+        android:id="@+id/fab_agregar_libros"
         android:layout_width="62dp"
         android:layout_height="56dp"
         android:layout_marginEnd="32dp"

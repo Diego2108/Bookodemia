@@ -6,6 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.dialog_add_libro.*
+import kotlinx.android.synthetic.main.cardview_libros.*
+import com.godiapper.bookodemia.adapter.AdapterLibro
+import kotlinx.android.synthetic.main.dialog_add_libro.view.*
 
 class Home_Activity : AppCompatActivity() {
 
@@ -22,7 +29,7 @@ class Home_Activity : AppCompatActivity() {
     }
 
     private fun initFabAddLibro(context: Context) {
-        fab_agregar_libro.setOnClickListener {
+        fab_agregar_libros.setOnClickListener {
             val layoutInflater =
                 LayoutInflater.from(context).inflate(R.layout.dialog_add_libro, null)
             val dialog = AlertDialog.Builder(context).setView(layoutInflater).setCancelable(false)
@@ -64,9 +71,9 @@ class Home_Activity : AppCompatActivity() {
                 1997)
         )
 
-        recyclerview_libros.layoutManager = GridLayoutManager(this, 3)
+        recyclerview_libros.layoutManager = LinearLayoutManager(this)
         recyclerview_libros.setHasFixedSize(true)
         adapterLibro = AdapterLibro(listLibros)
         recyclerview_libros.adapter = adapterLibro
-    }
+    }*/
 }
