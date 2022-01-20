@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/banner" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_callback_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -40,7 +40,7 @@
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_callback_login" />
 
     <TextView
         android:id="@+id/textView6"

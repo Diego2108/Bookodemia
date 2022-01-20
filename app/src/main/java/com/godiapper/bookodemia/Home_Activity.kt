@@ -40,14 +40,14 @@ class Home_Activity : AppCompatActivity() {
                 val nombre = layoutInflater.til_nombre.editText?.text.toString()
                 val anio = layoutInflater.til_anio.editText?.text.toString()
                 if(urlImage.isNotEmpty() && nombre.isNotEmpty() && anio.isNotEmpty()){
-                    adapterLibro.agregarLibro(
+                 /*   adapterLibro.agregarLibro(
                         Libro(
                             urlImage,
                             nombre,
                             anio.toInt()
                         ))
 
-                    instanciaDialogo.dismiss()
+                    instanciaDialogo.dismiss()*/
                 }
             }
         }
@@ -74,6 +74,6 @@ class Home_Activity : AppCompatActivity() {
         recyclerview_libros.layoutManager = LinearLayoutManager(this)
         recyclerview_libros.setHasFixedSize(true)
         adapterLibro = AdapterLibro(listLibros)
-        recyclerview_libros.adapter = adapterLibro
-    }*/
+        //recyclerview_libros.adapter = adapterLibro
+    }
 }

@@ -53,5 +53,8 @@ class MainActivity : AppCompatActivity() {
             button_login.setOnClickListener {
                 startActivity(Intent(this, Home_Activity::class.java))
             }
+            button_registrarse.setOnClickListener {
+                startActivity(Intent(this, Registro_Activity::class.java))
+            }
     }
 }

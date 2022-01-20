@@ -14,7 +14,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.google.android.material.card.MaterialCardView
 
 
-class AdapterLibro (val libros: MutableList<Libro>){:
+class AdapterLibro (val libros: MutableList<Libro>){/*:
    RecyclerView.Adapter<AdapterLibro.LibroHolder>() {
     class LibroHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val cardView : MaterialCardView = view.findViewById(R.id.cardView_agrgar_libro)
@@ -51,5 +51,5 @@ class AdapterLibro (val libros: MutableList<Libro>){:
     fun agregarLibro(libro: Libro){
         this.libros.add(libro)
         notifyItemInserted(itemCount)
-    }
+    }*/
 }
