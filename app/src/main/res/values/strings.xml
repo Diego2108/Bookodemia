@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Bookodemia</string>
+    <string name="button_crear_cuenta">Crear cuenta</string>
+    <string name="textViet_Registra_tu">Registra tu informacion</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="correo">Correo</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
 </resources>
