@@ -95,17 +95,19 @@
             app:layout_constraintStart_toStartOf="@+id/til_pasword_lo"
             app:layout_constraintTop_toBottomOf="@+id/til_pasword_lo" />
 
-        <Button
-            android:id="@+id/button_registrarse"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="@color/blue_300"
-            android:text="Registrarse"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/button_login"
-            app:layout_constraintStart_toStartOf="@+id/button_login"
-            app:layout_constraintTop_toBottomOf="@+id/button_login" />
+    <TextView
+        android:id="@+id/tv_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_registarse"
+        android:textColor="@color/blue_700"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+
 
    <!--</ScrollView>-->
 

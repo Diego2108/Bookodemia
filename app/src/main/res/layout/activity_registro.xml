@@ -26,7 +26,7 @@
         android:layout_marginTop="24dp"
         android:text="Regresar"
         android:textColor="@color/blue_700"
-        android:textSize="30sp"
+        android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,10 +34,12 @@
         android:id="@+id/textView3"
         android:layout_width="355dp"
         android:layout_height="56dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Estas a unos cuantos pasos de vivir la mejor experiencia"
         android:textColor="@color/blue_300"
-        android:textSize="23sp"
+        android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_callback_login" />
@@ -77,11 +79,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/blue_700"
                 android:text="@string/button_crear_cuenta"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/til_pasword_registro"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/til_pasword_registro" />
 
@@ -113,7 +116,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/til_usurio_registro">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tiet_correo_regisstro"
+                    android:id="@+id/tiet_correo_registro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/correo"

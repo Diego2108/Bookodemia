@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardView_agrgar_libro"
+    android:id="@+id/cardView_agregar_libro"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
@@ -15,15 +15,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageView_libro"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="125dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,29 +36,42 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:textColor="@color/blue_700"
-            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textSize="23sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView_libro"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="TextView" />
+            tools:text="@string/tv_titulo" />
 
         <TextView
             android:id="@+id/textView_Anio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            android:text="textView"
-            android:textColor="@color/blue_300"
-            android:textSize="22sp"
+            android:text="@string/tv_autor"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView_libro"
             app:layout_constraintTop_toBottomOf="@+id/textView_Nombre" />
+
+        <TextView
+            android:id="@+id/textView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tv_categoria"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_libro"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Anio" />
 
         <!-- <TextView
             android:id="@+id/textView_Autor"

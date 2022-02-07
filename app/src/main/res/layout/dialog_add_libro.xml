@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="500dp"
     app:cardElevation="10dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textView_callback_login"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:text="Agrega un libro"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_nombre"
+            android:id="@+id/til_titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -53,28 +54,28 @@
             app:layout_constraintTop_toBottomOf="@+id/til_url">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tiet_nombre"
+                android:id="@+id/tiet_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="A" />
+                android:hint="Titulo" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_anio"
+            android:id="@+id/til_autor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_nombre">
+            app:layout_constraintTop_toBottomOf="@+id/til_titulo">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tiet_anio"
+                android:id="@+id/tiet_autor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Año" />
+                android:hint="Autor" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,10 +86,25 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:text="Aceptar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_anio" />
+            app:layout_constraintTop_toBottomOf="@+id/til_categoria" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/til_autor"
+            app:layout_constraintStart_toStartOf="@+id/til_autor"
+            app:layout_constraintTop_toBottomOf="@+id/til_autor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Categoría" />
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

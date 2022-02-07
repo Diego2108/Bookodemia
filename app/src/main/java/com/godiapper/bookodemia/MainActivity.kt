@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.GridLayoutManager
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, Home_Activity::class.java))
             }
 
-            val buttonActivityRegistro: Button = findViewById(R.id.button_registrarse)
+            val tv_registrarse: TextView = findViewById(R.id.tv_registrarse)
             buttonActivity.setOnClickListener {
                 startActivity(Intent(this, Registro_Activity::class.java))
             }
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             button_login.setOnClickListener {
                 startActivity(Intent(this, Home_Activity::class.java))
             }
-            button_registrarse.setOnClickListener {
+            tv_registrarse.setOnClickListener {
                 startActivity(Intent(this, Registro_Activity::class.java))
             }
     }

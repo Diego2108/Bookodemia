@@ -6,4 +6,15 @@
     <string name="correo">Correo</string>
     <string name="usuario">Usuario</string>
     <string name="contrase_a">Contraseña</string>
+    <string name="tv_registarse">¿Todavía no tienes cuenta? Regístrate</string>
+    <string name="tv_autor">Autor</string>
+    <string name="tv_categoria">Categoria</string>
+    <string name="tv_titulo">Titulo</string>
+    <string name="textview_regresar_detalles">Regresar</string>
+    <string name="textview_book_mockup">Book Mockup</string>
+    <string name="tv_autor_detalles">by Autor</string>
+    <string name="tv_categoria_detalle">Categoría</string>
+    <string name="textview_loremp">Lorem ipsumes un texto de marcador de posicion comunmente utilizado en las industrias graficas, graficas y editoriales para previsualizar diseños y maquetas visuales</string>
+    <string name="textview_sobre_elautor">Sobre el autor</string>
+    <string name="textview_nameautor">Nombre del autor</string>
 </resources>
